@@ -1,0 +1,11 @@
+{
+    "name": "RajBioSauce",
+    "version": "0.1.0",
+    "title": "RajBioSauce",
+    "author": "blzrdwzrd",
+    "contact": "",
+    "homepage": "https://www.nyan.cat",
+    "factorio_version": "0.17",
+    "dependencies": ["base >= 0.17"],
+    "description": "This mod makes biodiesel a thing."
+}
