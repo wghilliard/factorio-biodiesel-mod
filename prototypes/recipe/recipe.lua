@@ -4,15 +4,15 @@ data:extend({
     name = "biodiesel-processing",
     category = "biodiesel-production",
     enabled = true,
-    energy_required = 5,
+    energy_required = 1,
     ingredients =
     {
-      {type="fluid", name="water", amount=100},
-      {type="item",  name="explosives", amount=10}
+      {type="fluid", name="water", amount=60},
+      {type="item",  name="explosives", amount=2}
     },
     results=
     {
-      {type="fluid", name="biodiesel", amount=30},
+      {type="fluid", name="biodiesel", amount=60},
     },
     icon = "__base__/graphics/icons/fluid/basic-oil-processing.png",
     icon_size = 32,
@@ -24,7 +24,12 @@ data:extend({
       name = "biodiesel-engine",
       enabled = true,
       energy_required = 3,
-      ingredients = {{"iron-gear-wheel", 50}, {"copper-plate", 50}, {"pipe", 20}},
+      ingredients = {
+        {"concrete", 100},
+        {"steel-plate", 50},
+        {"advanced-circuit", 100},
+        {"iron-gear-wheel", 100},
+        {"pipe", 20}},
       result = "biodiesel-engine"
   },
   {
@@ -41,5 +46,5 @@ data:extend({
   },
   result = "algae-farm",
   requester_paste_multiplier= 10
-},
+}
 })
